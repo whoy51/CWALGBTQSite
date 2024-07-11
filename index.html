@@ -11,6 +11,8 @@
 </head>
     <body>
         <header><h1>Connell Wise & Associates LGBTQ Business Directory</h1></header>
+
+        <h3>Abstract</h3>
         
         <p>At Connell Wise & Associates, we are dedicated to fostering inclusivity and supporting the vibrant LGBTQ community within the District of Columbia. 
             Our comprehensive LGBTQ Business Directory is designed to celebrate and promote businesses owned by LGBTQ individuals, 
@@ -25,16 +27,23 @@
             innovation, creativity and continuous improvement. A passion for innovation and creativity leads to continuous 
             improvement and ensures that customers are provided with the best.</p>
 
-        <p>Have questions? Feel free to <a>contact us</a>!</p>
+        <h3>Contact and Downloads</h3>
 
+        <p>Have questions? Feel free to <a>contact us</a>! Click the links down below to download our dataset 👇</p>
 
-        <li>Click <a>here</a> to download the dataset as a CSV</li>
-        <li>Click <a>here</a> to download the dataset as a Excel Spreadsheet</li>
-        <p></p>
+        <li><a href="/data.csv" download>data.csv</a></li>
+        <li><a>data.xlsx</a></li>
+        
+        <h3>Map</h3>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QeB4bLCak0xsooT0WCjazD5EuBzaw0s&ehbc=2E312F&noprof=1" width=720 height="480"></iframe>
+        
 
+        <h3>Data</h3>
         <table id="businessTable" class="display">
             
         </table>
+
+
     </body>
 
     <script>
@@ -42,7 +51,7 @@
 
 
         function loadCsv() {
-            const csvFilePath = '/test.csv'; // Update this with the path to your CSV file
+            const csvFilePath = '/data.csv'; // Update this with the path to your CSV file
             
             fetch(csvFilePath)
                 .then(response => response.text())
